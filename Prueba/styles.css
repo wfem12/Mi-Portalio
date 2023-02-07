@@ -1,0 +1,718 @@
+* {
+    Margin: 0;
+    Padding: 0;
+    Box-Sizing: Border-Box;
+}
+
+Body {
+    Font-Family: "Poppins", Sans-Serif;
+}
+
+Header {
+    Background-Color: #25b79f;
+    Height: 100vh;
+}
+
+.Container {
+    Max-Width: 1200px;
+    Width: 90%;
+    Margin: Auto;
+}
+
+
+
+/* ////........Navbar.......//// */
+
+.Navbar {
+    Position: Fixed;
+    Width: 100%;
+    Z-Index: 500;
+}
+
+.Navbar-Container {
+    Display: Flex;
+    Justify-Content: Space-Between;
+    Align-Items: Center;
+    Height: 64px;
+}
+
+.Menu-Items {
+    Display: Flex;
+}
+
+.Menu-Items Li {
+    List-Style: None;
+    Padding: 1rem;
+}
+
+.Menu-Items A {
+    Text-Decoration: None;
+    Color: #F0f0e6;
+    Font-Size: 1.2rem;
+    Padding: 0.3rem;
+}
+
+.Menu-Items A:hover {
+    Border-Bottom: 2px Solid #F0f0e6;
+}
+
+.Navbar .Logo {
+    Order: 1;
+    Color: #F0f0e6;
+    Font-Size: 2rem;
+}
+
+/* ////........Home Content........//// */
+
+.Home-Content .Name {
+    Position: Absolute;
+    Top: 47%;
+    Left: 50%;
+    Transform: Translate(-50%, -50%);
+    Color: #07374a;
+    Width: 100%;
+    Text-Align: Center;
+}
+
+.Home-Content .Name H1 {
+    Font-Size: 2.2rem;
+    Text-Align: Center;
+}
+
+.Home-Content .Name P {
+    Color: #F0f0e6;
+    Font-Size: 1.5rem;
+}
+
+/* ////........Boton para dirigir........//// */
+
+.Angle-Down-Icon {
+    Position: Absolute;
+    Bottom: 10%;
+    Left: 50%;
+    Transform: Translate(-50%, -50%);
+    Font-Size: 2rem;
+}
+
+
+/* ////........About Me........//// */
+
+.About-Me {
+    Background-Color: #07374a;
+    Padding: 6rem 0;
+}
+
+.About-Me .About-Heading {
+    Color: #25b79f;
+    Font-Size: 2rem;
+    Font-Weight: 600;
+    Text-Align: Center;
+}
+
+.About-Content Img {
+    Height: 200px;
+    Width: 150px;
+    Object-Fit: Cover;
+    Border-Radius: 50%;
+}
+
+.About-Content P {
+    Font-Size: 1.2rem;
+    Color: #F0f0e6;
+    Padding: 0 2.3rem;
+    Text-Align: Center;
+}
+
+.Skills .Skills-Heading {
+    Font-Size: 2rem;
+    Font-Weight: 600;
+    Color: #25b79f;
+    Text-Align: Center;
+}
+
+.About-Me .About-Content {
+    Display: Flex;
+    Flex-Wrap: Wrap;
+}
+
+.About-Content .Left-Content {
+    Flex-Basis: 45%;
+    Text-Align: Center;
+}
+
+.About-Content .Right-Content {
+    Flex-Basis: 45%;
+}
+
+
+/* ///.....Skill Bar....../// */
+
+.Skills-Bar {
+    Padding: 25px 30px;
+}
+
+.Skills-Bar .Bar {
+    Margin: 25px 0;
+}
+
+.Skills-Bar .Bar .Info Span {
+    Font-Size: 1rem;
+    Font-Weight: 500;
+}
+
+.Skills-Bar .Bar .Info {
+    Margin-Bottom: 8px;
+    Color: #F0f0e6;
+}
+
+.Skills-Bar .Bar .Progress-Line {
+    Position: Relative;
+    Height: 10px;
+    Width: 550px;
+    Background: #F0f0f0;
+    Border-Radius: 10px;
+    Transform: ScaleX(0);
+    Transform-Origin: Left;
+    Animation: Animate 1s Cubic-Bezier(1, 0, 0.5, 1) Forwards;
+}
+
+.Bar .Progress-Line Span {
+    Position: Absolute;
+    Background: #25b79f;
+    Height: 100%;
+    Border-Radius: 10px;
+    Transform: ScaleX(0);
+    Transform-Origin: Left;
+    Animation: Animate 1s 1s Cubic-Bezier(1, 0, 0.5, 1) Forwards;
+}
+
+@Keyframes Animate {
+    100% {
+        Transform: ScaleX(1);
+    }
+}
+
+.Progress-Line .Html {
+    Width: 80%;
+}
+
+.Progress-Line .Css {
+    Width: 70%;
+}
+
+.Progress-Line .Bootstrap {
+    Width: 50%;
+}
+
+.Progress-Line .Javascript {
+    Width: 50%;
+}
+
+.Progress-Line .C {
+    Width: 50%;
+}
+
+.Bar .Progress-Line Span::Before {
+    Position: Absolute;
+    Content: "";
+    Height: 0;
+    Right: 0;
+    Top: -12px;
+    Width: 0;
+    Border: 7px Solid Transparent;
+    Border-Bottom-Width: 0px;
+    Border-Right-Width: 0px;
+    Border-Top-Style: #F0f0f0;
+    Border-Top-Color: #F0f0f0;
+}
+
+.Bar .Progress-Line Span::After {
+    Position: Absolute;
+    Right: 0;
+    Top: -28px;
+    Color: #07374a;
+    Font-Size: 12px;
+    Font-Weight: 700;
+    Background: #F0f0f0;
+    Padding: 1px 8px;
+    Border-Radius: 3px;
+}
+
+.Progress-Line .Html::After {
+    Content: "80%";
+}
+
+.Progress-Line .Css::After {
+    Content: "70%";
+}
+
+.Progress-Line .Bootstrap::After {
+    Content: "50%";
+}
+
+.Progress-Line .Javascript::After {
+    Content: "50%";
+}
+
+.Progress-Line .C::After {
+    Content: "50%";
+}
+
+.Navbar.Solid {
+    Background-Color: #07374a;
+    Transition: Background-Color 1s Ease 0s;
+    Box-Shadow: 0 0 4px Rgb(7 55 74 / 20%);
+    Z-Index: 500;
+}
+
+.Navbar.Solid .Navbar-Brand {
+    Display: Inline-Block;
+    Color: #F0f0e6;
+    Transition: Color 1s Ease 0s;
+}
+
+.Navbar-Brand {
+    Display: None;
+    Color: #F0f0e6;
+    Font-Weight: 400;
+}
+
+.Work-Arrow {
+    Margin: 2rem 0;
+}
+
+.Work-Arrow A {
+    Font-Size: 1rem;
+    Text-Decoration: None;
+    Color: #25b79f;
+}
+
+.Work-Arrow-2 {
+    Margin: 2rem 0;
+}
+
+.Work-Arrow-2 A {
+    Font-Size: 1rem;
+    Text-Decoration: None;
+    Color: #25b79f;
+    Display: None;
+}
+
+
+/* TRABAJO */
+
+/* ////.....Portfolio......///// */
+
+.Portfolio {
+    Background: #25b79f;
+    Padding: 6rem 0;
+}
+
+.Proj-Heading H1 {
+    Text-Align: Center;
+    Color: #07374a;
+    Font-Size: 2.3rem;
+    Font-Weight: 700;
+    Margin: 3rem 0;
+}
+
+.Proj-1 {
+    Display: Flex;
+    Justify-Content: Center;
+    Align-Items: Center;
+}
+
+.Proj-1 Img {
+    Height: 330px;
+    Width: 380px;
+    Object-Fit: Cover;
+    Border-Radius: 50%;
+    Box-Shadow: 0 20px 10px -10px Rgb(37 41 52 / 31%);
+    Margin-Right: 1.7rem;
+}
+
+.Proj-1 .Proj1-Details {
+    Width: 32rem;
+}
+
+.Proj-1 .Proj1-Details I {
+    Font-Size: 1.5rem;
+    Color: #07374a;
+}
+
+.Proj-1 .Proj1-Details H2 {
+    Font-Size: 2rem;
+    Color: #07374a;
+}
+
+.Proj-1 .Proj1-Details P {
+    Font-Size: 1.3rem;
+    Color: #07374a;
+    Font-Weight: 600;
+}
+
+.Proj-1 .Proj1-Details Button {
+    Background: #F0f0e6;
+    Padding: 0.5rem;
+    Margin-Top: 0.5rem;
+    Width: 150px;
+    Border: None;
+    Border-Bottom: 2px Solid #07374a;
+}
+
+.Proj-1 .Proj1-Details Button A {
+    Text-Decoration: None;
+    Color: #07374a;
+    Font-Size: 1.1rem;
+    Transition: 0.2s Ease-In-Out;
+    Text-Align: Center;
+    Transition: 0.3s Ease-In-Out;
+}
+
+.Proj-1 .Proj1-Details Button .Fas {
+    Font-Size: 0.7rem;
+    Padding: 0.3rem;
+    Transition: 0.2s Ease-In-Out;
+}
+
+.Proj-1 .Proj1-Details Button:hover {
+    Background: #07374a;
+}
+
+.Proj-1 .Proj1-Details Button:hover A,
+.Proj-1 .Proj1-Details Button:hover .Fas {
+    Color: #F0f0e6;
+}
+
+
+
+/* TRABAJO 2 */
+/* ////.....Proj2.....//// */
+
+.Proj-2 {
+    Display: Flex;
+    Justify-Content: Center;
+    Align-Items: Center;
+    Margin-Top: 3rem;
+}
+
+.Proj-2 Img {
+    Height: 330px;
+    Width: 380px;
+    Object-Fit: Cover;
+    Border-Radius: 50%;
+    Box-Shadow: 0 20px 10px -10px Rgb(37 41 52 / 31%);
+    Margin-Right: 1.7rem;
+}
+
+.Proj-2 .Proj2-Details {
+    Width: 32rem;
+}
+
+.Proj-2 .Proj2-Details I {
+    Font-Size: 1.5rem;
+    Color: #07374a;
+}
+
+.Proj-2 .Proj2-Details H2 {
+    Font-Size: 2rem;
+    Color: #07374a;
+}
+
+.Proj-2 .Proj2-Details P {
+    Font-Size: 1.3rem;
+    Color: #07374a;
+    Font-Weight: 600;
+}
+
+.Proj-2 .Proj2-Details Button {
+    Background: #F0f0e6;
+    Padding: 0.5rem;
+    Margin-Top: 0.5rem;
+    Width: 150px;
+    Border: None;
+    Border-Bottom: 2px Solid #07374a;
+}
+
+.Proj-2 .Proj2-Details Button A {
+    Text-Decoration: None;
+    Color: #07374a;
+    Font-Size: 1.1rem;
+    Transition: 0.2s Ease-In-Out;
+    Text-Align: Center;
+    Transition: 0.3s Ease-In-Out;
+}
+
+.Proj-2 .Proj2-Details Button .Fas {
+    Font-Size: 0.7rem;
+    Padding: 0.3rem;
+    Transition: 0.2s Ease-In-Out;
+}
+
+.Proj-2 .Proj2-Details Button:hover {
+    Background: #07374a;
+}
+
+.Proj-2 .Proj2-Details Button:hover A,
+.Proj-2 .Proj2-Details Button:hover .Fas {
+    Color: #F0f0e6;
+}
+
+.More-Work {
+    Text-Align: Center;
+    Margin: 3rem 0 1rem 0;
+}
+
+.More-Work P {
+    Font-Size: 1.6rem;
+    Color: #07374a;
+    Font-Weight: 500;
+}
+
+.More-Work A {
+    Text-Decoration: None;
+    Color: #F0f0e6;
+    Font-Size: 1.3rem;
+}
+
+.More-Work A:hover {
+    Border-Bottom: 2px Solid #F0f0e6;
+}
+
+/* ////......Contact......///// */
+
+.Contact {
+    Background: #07374a;
+    Position: Relative;
+    Height: 92vh;
+}
+
+.Contact-Content {
+    Position: Absolute;
+    Top: 50%;
+    Left: 50%;
+    Transform: Translate(-50%, -50%);
+    Text-Align: Center;
+}
+
+.Contact-Content H2 {
+    Font-Size: 2.5rem;
+    Font-Weight: 400;
+    Color: #25b79f;
+    Padding-Bottom: 0.5rem;
+}
+
+.Contact-Content .Mail {
+    Color: #F0f0e6;
+    Padding-Bottom: 0.2rem;
+    Font-Size: 1rem;
+}
+
+.Contact-Content .Links {
+    Color: #25b79f;
+    Padding: 0.5rem;
+    Padding-Bottom: 1.8rem;
+    Font-Size: 1rem;
+}
+
+.Contact-Content A {
+    Text-Decoration: None;
+    Color: #25b79f;
+    Padding: 0.5rem;
+    Transition: 0.3s Ease-In-Out;
+}
+
+.Contact-Content A:hover {
+    Color: #F0f0e6;
+}
+
+/* ////......Media Query......//// */
+
+@Media (Max-Width: 500px) {
+    Html {
+        Font-Size: 60%;
+    }
+
+    .About-Content .Left-Content {
+        Flex-Basis: 100%;
+        Text-Align: Center;
+    }
+
+    .About-Content .Right-Content {
+        Flex-Basis: 100%;
+    }
+
+    .Skills {
+        Width: 100%;
+    }
+
+    .Skills-Bar .Bar .Progress-Line {
+        Width: 100%;
+    }
+
+    .Work-Arrow {
+        Display: None;
+    }
+
+    .Right-Content H1 {
+        Margin-Top: 3.2rem;
+    }
+
+    .Proj-1 {
+        Display: Flex;
+        Justify-Content: Center;
+        Flex-Direction: Column;
+    }
+
+    .Proj-1 Img {
+        Height: 230px;
+        Width: 290px;
+        Margin-Bottom: 0.5rem;
+    }
+
+    .Proj-2 {
+        Display: Flex;
+        Justify-Content: Center;
+        Flex-Direction: Column;
+    }
+
+    .Proj-2 Img {
+        Height: 250px;
+        Width: 290px;
+        Margin-Bottom: 0.5rem;
+    }
+
+    .Work-Arrow-2 A {
+        Font-Size: 1.3rem;
+        Text-Decoration: None;
+        Color: #25b79f;
+        Display: Block;
+        Text-Align: Center;
+    }
+
+    .Contact-Content {
+        Width: 100%;
+    }
+}
+
+@Media (Min-Width: 501px) And (Max-Width: 768px) {
+    Html {
+        Font-Size: 65%;
+    }
+
+    .About-Content .Left-Content {
+        Flex-Basis: 100%;
+        Text-Align: Center;
+    }
+
+    .About-Content .Right-Content {
+        Flex-Basis: 100%;
+    }
+
+    .Skills {
+        Width: 100%;
+    }
+
+    .Skills-Bar .Bar .Progress-Line {
+        Width: 100%;
+    }
+
+    .Work-Arrow {
+        Display: None;
+    }
+
+    .Right-Content H1 {
+        Margin-Top: 3.2rem;
+    }
+
+    .Proj-1 {
+        Display: Flex;
+        Justify-Content: Center;
+        Flex-Direction: Column;
+    }
+
+    .Proj-1 Img {
+        Height: 240px;
+        Width: 290px;
+        Margin-Bottom: 0.5rem;
+    }
+
+    .Proj-2 {
+        Display: Flex;
+        Justify-Content: Center;
+        Flex-Direction: Column;
+    }
+
+    .Proj-2 Img {
+        Height: 240px;
+        Width: 290px;
+        Margin-Bottom: 0.5rem;
+    }
+
+    .Work-Arrow-2 A {
+        Font-Size: 1.3rem;
+        Text-Decoration: None;
+        Color: #25b79f;
+        Display: Block;
+        Text-Align: Center;
+    }
+
+    .Contact-Content {
+        Width: 100%;
+    }
+}
+
+@Media (Min-Width: 769px) And (Max-Width: 1200px) {
+    Html {
+        Font-Size: 70%;
+    }
+
+    .About-Content .Left-Content {
+        Flex-Basis: 100%;
+        Text-Align: Center;
+    }
+
+    .About-Content .Right-Content {
+        Flex-Basis: 100%;
+    }
+
+    .Skills {
+        Width: 100%;
+        Display: Flex;
+        Flex-Direction: Column;
+        Justify-Content: Center;
+        Align-Items: Center;
+    }
+
+    .Work-Arrow {
+        Display: None;
+    }
+
+    .Left-Content H1 {
+        Margin-Top: 3.2rem;
+        Text-Align: Center;
+    }
+
+    .Right-Content H1 {
+        Margin-Top: 3.2rem;
+        Text-Align: Center;
+    }
+
+    .Work-Arrow-2 A {
+        Font-Size: 1.3rem;
+        Text-Decoration: None;
+        Color: #25b79f;
+        Display: Block;
+        Text-Align: Center;
+    }
+
+    .Contact-Content {
+        Width: 100%;
+    }
+}
+
+@Media (Orientation: Landscape) And (Max-Height: 500px) {
+    .Header {
+        Height: 90vmax;
+    }
+}

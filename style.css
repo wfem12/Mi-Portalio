@@ -1,0 +1,313 @@
+/* FONDO DE LA PAGINA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #808080;
+}
+
+/* ----------------------------------------------------HEADER---------------------------------------------------- */
+
+/* COLOR DEL HEADER Y LA ALTURA QUE TENDRA  */
+Header {
+    background-color: #25b79f;
+    height: 100vh;
+}
+
+/* POSICION DEL CONTENIDO */
+.Container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+/* -----------------NAVBAR----------------- */
+
+/* CREAR LA POSICION DE LA NAVEGACION AL UTILIZAR EL SCROLL */
+.Navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+}
+
+/* COLOCACION HORIZONTAL DE LA NAVEGACION EN POSICION FIXED */
+.Navbar-Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+/* COLOCAR LOS MENUS EN POSICION HORIZONTAL */
+.Menu-Items {
+    display: flex;
+}
+
+/* SEPARACION DE LAS LISTA DEL MENU */
+.Menu-Items li {
+    list-style: none;
+    padding: 1rem;
+}
+
+/* DECORANDO LA LISTA DEL MENU */
+.Menu-Items a {
+    Text-Decoration: None;
+    Color: #F0f0e6;
+    Font-Size: 1.2rem;
+    Padding: 0.3rem;
+}
+
+.Menu-Items a:hover {
+    border-bottom: 2px solid #F0f0e6;
+}
+
+/* POSICIONANDO EL CONTENIDO EN MEDIO */
+.Home-Content .Name {
+    Position: Absolute;
+    Top: 47%;
+    Left: 50%;
+    Transform: Translate(-50%, -50%);
+    Color: #07374a;
+    Width: 100%;
+    Text-Align: Center;
+}
+
+/* COLOCANDO TAMAÑO TANTO EL TITULO COMO EL PARRAFO */
+
+.Home-Content .Name h1 {
+    Font-Size: 2.2rem;
+    Text-Align: Center;
+}
+
+.Home-Content .Name p {
+    Color: #F0f0e6;
+    Font-Size: 1.5rem;
+}
+
+/* BOTON PARA DIRIGIR A ACERCA DE */
+.ButtonLinkDown {
+    Position: Absolute;
+    Bottom: 10%;
+    Left: 50%;
+    Transform: Translate(-50%, -50%);
+    Font-Size: 2rem;
+}
+
+
+/* ----------------------------------------------------ACERCA DE MI---------------------------------------------------- */
+
+/* ////........About Me........//// */
+
+/* CAMBIAR EL COLOR */
+.About-Me {
+    Background-Color: #07374a;
+    Padding: 6rem 0;
+}
+
+.About-Me .About-Heading {
+    Color: #25b79f;
+    Font-Size: 2rem;
+    Font-Weight: 600;
+    Text-Align: Center;
+}
+
+/* CAMBIARLE EL TAMAÑO A LA IMAGEN Y OPTIMIZARLA */
+.About-Content Img {
+    Height: 200px;
+    Width: 150px;
+    Object-Fit: Cover;
+    Border-Radius: 50%;
+}
+
+/* DECORAR EL TEXTO DEL PARRAFO Y CAMBIARLE EL TAMAÑO */
+.About-Content P {
+    Font-Size: 1.2rem;
+    Color: #F0f0e6;
+    Padding: 0 2.3rem;
+    Text-Align: Center;
+}
+
+/* ALINEAR EL TEXTO AL CENTRO Y CAMBIARLE EL TAMAÑO */
+.Skills .Skills-Heading {
+    Font-Size: 2rem;
+    Font-Weight: 600;
+    Color: #25b79f;
+    Text-Align: Center;
+}
+
+/* PASAR EL CONTENIDO DE LAS HABILIDADES A LA IZQUIERDA */
+.About-Me .About-Content {
+    Display: Flex;
+    Flex-Wrap: Wrap;
+}
+
+/* ALINEAR TODO EN MEDIO Y EN SU POSICION TANTO DERECHA COMO IZQUIERDA */
+.About-Content .Left-Content {
+    Flex-Basis: 45%;
+    Text-Align: Center;
+}
+
+.About-Content .Right-Content {
+    Flex-Basis: 45%;
+}
+
+
+/* ///.....Skill Bar....../// */
+
+.Skills-Bar {
+    Padding: 25px 30px;
+}
+
+/* SEPARARLO DE MANERA VERTICAL LAS HABILIDADES */
+.Skills-Bar .Bar {
+    Margin: 25px 0;
+}
+
+.Skills-Bar .Bar .Info Span {
+    Font-Size: 1rem;
+    Font-Weight: 500;
+}
+
+/* CAMBIARLE EL COLOR DE LA INFORMACION DE LAS HABILIDADES */
+.Skills-Bar .Bar .Info {
+    Margin-Bottom: 8px;
+    Color: #F0f0e6;
+}
+
+/* CREAR LA POSICION RELATIVO PARA COLOCARLO A LA DERECHA Y CENTRADO */
+.Skills-Bar .Bar .Progress-Line {
+    Position: Relative;
+    Height: 10px;
+    Width: 550px;
+    Background: #F0f0f0;  /* MUESTRA EL RANGO (Bar) */
+    Border-Radius: 10px;
+    Transform: ScaleX(0); /* LO MUESTRA EN EL EJE X EN LA POSICION 0 (NO SE VE) */
+    Transform-Origin: Left;
+    Animation: Animate 1s Cubic-Bezier(1, 0, 0.5, 1) Forwards;
+}
+
+.Bar .Progress-Line Span {
+    Position: Absolute;
+    Background: #25b79f;
+    Height: 100%;
+    Border-Radius: 10px;
+    Transform: ScaleX(0);
+    Transform-Origin: Left;
+    Animation: Animate 1s 1s Cubic-Bezier(1, 0, 0.5, 1) Forwards;
+}
+
+/* CREA UNA ANIMACION QUE MUESTRA CON UN COLOR SOLIDO EL % DEL RANGO */
+@Keyframes Animate {
+    100% {
+        Transform: ScaleX(1);
+    }
+}
+
+/* .Progress-Line .Html {
+    Width: 80%;
+} */
+
+/* .Progress-Line .Css {
+    Width: 70%;
+} */
+
+/* .Progress-Line .Bootstrap {
+    Width: 50%;
+} */
+
+/* .Progress-Line .Javascript {
+    Width: 50%;
+} */
+
+/* .Progress-Line .C {
+    Width: 50%;
+} */
+
+/* .Bar .Progress-Line Span::Before {
+    Position: Absolute;
+    Content: "";
+    Height: 0;
+    Right: 0;
+    Top: -12px;
+    Width: 0;
+    Border: 7px Solid Transparent;
+    Border-Bottom-Width: 0px;
+    Border-Right-Width: 0px;
+    Border-Top-Style: #F0f0f0;
+    Border-Top-Color: #F0f0f0;
+} */
+
+/* .Bar .Progress-Line Span::After {
+    Position: Absolute;
+    Right: 0;
+    Top: -28px;
+    Color: #07374a;
+    Font-Size: 12px;
+    Font-Weight: 700;
+    Background: #F0f0f0;
+    Padding: 1px 8px;
+    Border-Radius: 3px;
+} */
+
+/* .Progress-Line .Html::After {
+    Content: "80%";
+}
+
+.Progress-Line .Css::After {
+    Content: "70%";
+}
+
+.Progress-Line .Bootstrap::After {
+    Content: "50%";
+}
+
+.Progress-Line .Javascript::After {
+    Content: "50%";
+}
+
+.Progress-Line .C::After {
+    Content: "50%";
+} */
+
+/* .Navbar.Solid {
+    Background-Color: #07374a;
+    Transition: Background-Color 1s Ease 0s;
+    Box-Shadow: 0 0 4px Rgb(7 55 74 / 20%);
+    Z-Index: 500;
+} */
+
+/* .Navbar.Solid .Navbar-Brand {
+    Display: Inline-Block;
+    Color: #F0f0e6;
+    Transition: Color 1s Ease 0s;
+} */
+
+/* .Navbar-Brand {
+    Display: None;
+    Color: #F0f0e6;
+    Font-Weight: 400;
+} */
+
+/* .Work-Arrow {
+    Margin: 2rem 0;
+} */
+
+/* .Work-Arrow A {
+    Font-Size: 1rem;
+    Text-Decoration: None;
+    Color: #25b79f;
+} */
+
+/* .Work-Arrow-2 {
+    Margin: 2rem 0;
+} */
+
+/* .Work-Arrow-2 A {
+    Font-Size: 1rem;
+    Text-Decoration: None;
+    Color: #25b79f;
+    Display: None;
+} */
