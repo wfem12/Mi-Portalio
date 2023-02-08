@@ -27,23 +27,27 @@ Header {
 /* -----------------NAVBAR----------------- */
 
 /* CREAR LA POSICION DE LA NAVEGACION AL UTILIZAR EL SCROLL */
-.Navbar {
+/* .Navbar {
     position: fixed;
     width: 100%;
     z-index: 500;
-}
+} */
 
 /* COLOCACION HORIZONTAL DE LA NAVEGACION EN POSICION FIXED */
-.Navbar-Container {
+/* .Navbar-Container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 64px;
-}
+} */
 
 /* COLOCAR LOS MENUS EN POSICION HORIZONTAL */
 .Menu-Items {
     display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
 }
 
 /* SEPARACION DE LAS LISTA DEL MENU */
@@ -96,6 +100,15 @@ Header {
     Font-Size: 2rem;
 }
 
+/* BOTON PARA DIRIGIR A MIS PROYECTOS */
+.ButtonLinkDown2 {
+    Position: Absolute;
+    /* margin-top: 40px; */
+    Left: 50%;
+    Transform: Translate(-50%, -50%);
+    Font-Size: 2rem;
+}
+
 
 /* ----------------------------------------------------ACERCA DE MI---------------------------------------------------- */
 
@@ -115,7 +128,7 @@ Header {
 }
 
 /* CAMBIARLE EL TAMAÑO A LA IMAGEN Y OPTIMIZARLA */
-.About-Content Img {
+.About-Content img {
     Height: 200px;
     Width: 150px;
     Object-Fit: Cover;
@@ -123,7 +136,7 @@ Header {
 }
 
 /* DECORAR EL TEXTO DEL PARRAFO Y CAMBIARLE EL TAMAÑO */
-.About-Content P {
+.About-Content p {
     Font-Size: 1.2rem;
     Color: #F0f0e6;
     Padding: 0 2.3rem;
@@ -182,14 +195,16 @@ Header {
     Position: Relative;
     Height: 10px;
     Width: 550px;
-    Background: #F0f0f0;  /* MUESTRA EL RANGO (Bar) */
+    Background: #F0f0f0;
+    /* MUESTRA EL RANGO (Bar) */
     Border-Radius: 10px;
-    Transform: ScaleX(0); /* LO MUESTRA EN EL EJE X EN LA POSICION 0 (NO SE VE) */
+    Transform: ScaleX(0);
+    /* LO MUESTRA EN EL EJE X EN LA POSICION 0 (NO SE VE) */
     Transform-Origin: Left;
     Animation: Animate 1s Cubic-Bezier(1, 0, 0.5, 1) Forwards;
 }
 
-.Bar .Progress-Line Span {
+.Bar .Progress-Line span {
     Position: Absolute;
     Background: #25b79f;
     Height: 100%;
@@ -206,27 +221,49 @@ Header {
     }
 }
 
-/* .Progress-Line .Html {
-    Width: 80%;
-} */
+.Progress-Line .Html {
+    Width: 90%;
+}
 
-/* .Progress-Line .Css {
-    Width: 70%;
-} */
+.Progress-Line .Css {
+    Width: 60%;
+}
 
-/* .Progress-Line .Bootstrap {
+.Progress-Line .Bootstrap {
+    Width: 85%;
+}
+
+.Progress-Line .Javascript {
     Width: 50%;
-} */
+}
 
-/* .Progress-Line .Javascript {
+.Progress-Line .C {
     Width: 50%;
-} */
+}
 
-/* .Progress-Line .C {
-    Width: 50%;
-} */
+/* CONTENIDO */
+.Progress-Line .Html::After {
+    Content: "90%";
+}
 
-/* .Bar .Progress-Line Span::Before {
+.Progress-Line .Css::After {
+    Content: "60%";
+}
+
+.Progress-Line .Bootstrap::After {
+    Content: "85%";
+}
+
+.Progress-Line .Javascript::After {
+    Content: "50%";
+}
+
+.Progress-Line .C::After {
+    Content: "50%";
+}
+
+/* LINEA QUE DESCRIBE EL FINAL DEL COLOR */
+.Bar .Progress-Line span::Before {
     Position: Absolute;
     Content: "";
     Height: 0;
@@ -238,9 +275,10 @@ Header {
     Border-Right-Width: 0px;
     Border-Top-Style: #F0f0f0;
     Border-Top-Color: #F0f0f0;
-} */
+}
 
-/* .Bar .Progress-Line Span::After {
+/* MUESTRA EL NUMERO DE PORCENTAJE DESPUES DE COLOCARLE EL CONTENIDO */
+.Bar .Progress-Line Span::After {
     Position: Absolute;
     Right: 0;
     Top: -28px;
@@ -249,65 +287,167 @@ Header {
     Font-Weight: 700;
     Background: #F0f0f0;
     Padding: 1px 8px;
-    Border-Radius: 3px;
-} */
-
-/* .Progress-Line .Html::After {
-    Content: "80%";
+    Border-Radius: 10px;
 }
 
-.Progress-Line .Css::After {
-    Content: "70%";
-}
-
-.Progress-Line .Bootstrap::After {
-    Content: "50%";
-}
-
-.Progress-Line .Javascript::After {
-    Content: "50%";
-}
-
-.Progress-Line .C::After {
-    Content: "50%";
-} */
-
-/* .Navbar.Solid {
+.Navbar.Solid {
     Background-Color: #07374a;
     Transition: Background-Color 1s Ease 0s;
     Box-Shadow: 0 0 4px Rgb(7 55 74 / 20%);
     Z-Index: 500;
-} */
+}
 
-/* .Navbar.Solid .Navbar-Brand {
+.Navbar.Solid .Navbar-Brand {
     Display: Inline-Block;
     Color: #F0f0e6;
     Transition: Color 1s Ease 0s;
+}
+
+/* ---------------------------------------------------- MIS PROYECTOS ---------------------------------------------------- */
+
+/* MIS TRABAJOS */
+
+/* El color del fondo */
+.Portfolio {
+    Background: #25b79f;
+    Padding: 6rem 0;
+}
+
+/* Cambio del diseño del titulo */
+.Proj-Heading h1 {
+    Text-Align: Center;
+    Color: #07374a;
+    Font-Size: 2.3rem;
+    Font-Weight: 700;
+    Margin: 3rem 0;
+}
+
+/* Centra el Objeto */
+.Proj-1 {
+    Display: Flex;
+    Justify-Content: Center;
+    Align-Items: Center;
+}
+
+/* Diseño Circular y tamaño */
+.Proj-1 img {
+    Height: 330px;
+    Width: 380px;
+    Object-Fit: Cover;
+    Border-Radius: 50%;
+    Box-Shadow: 0 20px 10px -10px Rgb(37 41 52 / 31%);
+    Margin-Right: 1.7rem;
+    /* content: ""; */
+}
+
+.Portfolio-Content-image {
+    /* position: relative; */
+    /* right: 0%; */
+    /* transform: translate(-185%); */
+}
+
+.Proj-1 .Proj1-Details {
+    Width: 32rem;
+}
+
+.Proj-1 .Proj1-Details i {
+    Font-Size: 1.5rem;
+    Color: #07374a;
+}
+
+.Proj-1 .Proj1-Details h2 {
+    Font-Size: 2rem;
+    Color: #07374a;
+}
+
+.Proj-1 .Proj1-Details p {
+    Font-Size: 1.3rem;
+    Color: #07374a;
+    Font-Weight: 600;
+}
+
+/* Diseño de los botones */
+.Proj-1 .Proj1-Details Button {
+    Background: #F0f0e6;
+    Padding: 0.5rem;
+    Margin-Top: 0.5rem;
+    Width: 150px;
+    Border: None;
+    Border-Bottom: 2px Solid #07374a;
+}
+
+.Proj-1 .Proj1-Details Button a {
+    Text-Decoration: None;
+    Color: #07374a;
+    Font-Size: 1.1rem;
+    Transition: 0.2s Ease-In-Out;
+    Text-Align: Center;
+    Transition: 0.3s Ease-In-Out;
+}
+
+/* .Proj-1 .Proj1-Details Button .Fas {
+    Font-Size: 0.7rem;
+    Padding: 0.3rem;
+    Transition: 0.2s Ease-In-Out;
 } */
 
-/* .Navbar-Brand {
-    Display: None;
-    Color: #F0f0e6;
+.Proj-1 .Proj1-Details Button:hover {
+    Background: #07374a;
+}
+
+.Proj-1 .Proj1-Details Button:hover a,
+.Proj-1 .Proj1-Details Button:hover .Fas {
+    Color: #fff;
+}
+
+/* ---------------------------------------------------- CONTACTOS ---------------------------------------------------- */
+
+.MailBox {
+    color: #fff;
+}
+
+.Contact {
+    Background: #07374a;
+    Position: Relative;
+    Height: 92vh;
+}
+
+.Contact-Content {
+    Position: Absolute;
+    Top: 50%;
+    Left: 50%;
+    Transform: Translate(-50%, -50%);
+    Text-Align: Center;
+}
+
+.Contact-Content h2 {
+    Font-Size: 2.5rem;
     Font-Weight: 400;
-} */
+    Color: #25b79f;
+    Padding-Bottom: 0.5rem;
+}
 
-/* .Work-Arrow {
-    Margin: 2rem 0;
-} */
-
-/* .Work-Arrow A {
+.Contact-Content .Mail,
+.Contact-Content .MailBox {
+    Color: #F0f0e6;
+    Padding-Bottom: 0.2rem;
     Font-Size: 1rem;
+}
+
+.Contact-Content .Links {
+    Color: #25b79f;
+    Padding: 0.5rem;
+    Padding-Bottom: 1.8rem;
+    Font-Size: 1rem;
+}
+
+.Contact-Content a {
     Text-Decoration: None;
     Color: #25b79f;
-} */
+    Padding: 0.5rem;
+    Transition: 0.3s Ease-In-Out;
+}
 
-/* .Work-Arrow-2 {
-    Margin: 2rem 0;
-} */
-
-/* .Work-Arrow-2 A {
-    Font-Size: 1rem;
-    Text-Decoration: None;
-    Color: #25b79f;
-    Display: None;
-} */
+.Contact-Content .MailBox:hover {
+    color: #808080;
+}
