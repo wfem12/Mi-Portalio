@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prueba.css">
     <title>Portafolio</title>
 </head>
 
@@ -13,32 +14,38 @@
 
     <!-- ---------------------------------------------------- HEADER ---------------------------------------------------- -->
     <header class="Header">
-        <!-- Panel de Navegación -->
-        <nav class="Navbar">
-            <div class="Navbar-Container Container">
-                <!-- <div>
-                    <h1 class="Navbar-Brand">Bienvenido(a) a mi portafolio</h1>
-                </div> -->
-                <ul class="Menu-Items">
-                    <li><a href="#Acerca">Quien Soy</a></li>
-                    <li><a href="#Proyectos">Mis Proyectos</a></li>
-                    <li><a href="#Contacto">Mi Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <div class="content">
+            <!-- Panel de Navegación -->
+            <nav class="Navbar">
+                <div class="Navbar-Container Container">
+                    <ul class="Menu-Items">
+                        <li><a href="#Acerca">Quien Soy</a></li>
+                        <li><a href="#Proyectos">Mis Proyectos</a></li>
+                        <li><a href="#Contacto">Mi Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
 
-        <!-- Carta de Bienvenida -->
-        <div class="Home-Content" id="Home-Page">
-            <div class="Name">
-                <h1>Mucho gusto, me llamo Wilmer Fernando Esquivel</h1>
-                <p>Ingeniero en Sistema, Programador Junior</p>
-            </div>
+            <!-- Carta de Bienvenida -->
+            <div class="Home-Content" id="Home-Page">
+                <div class="Name">
+                    <div Class="Proj-1">
+                        <img height="20%" src="document/Yo.jpeg" alt="AppCamo">
+                    </div><br>
+                    <h1>Mucho gusto, me llamo Wilmer Fernando Esquivel</h1>
+                    <p>Ingeniero en Sistema, Programador Junior</p>
+                </div>
 
-            <div class="ButtonLinkDown">
-                <a href="#Acerca"><img src="scroll-down.png" alt="ScrollDown"></a>
+                <div class="ButtonLinkDown">
+                    <a href="#Acerca"><img src="document/scroll-down.png" alt="ScrollDown"></a>
+                </div>
             </div>
-        </div>
     </header>
+
+    </div>
 
     <!-- SECCIONS -->
 
@@ -49,20 +56,20 @@
             <div Class="About-Content">
                 <div Class="Left-Content">
                     <div>
-                        <h Class="About-Heading">About Me</h>
+                        <h1 Class="About-Heading">Acerca de Mi</h1>
                     </div>
-                    <Img Src="Https://I.Postimg.Cc/Hx4nChpH/Fbavatar-1630400663387-6838396024049256103.Png"
-                        Alt="Image" />
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis laboriosam repellat id
-                        eveniet consequuntur obcaecati voluptas dolorem aspernatur natus, adipisci cupiditate in porro.
-                        Eum expedita cum qui soluta quasi?
+                        Actualmente tengo 23 Años de edad, gradudado de la Universidad Católica de Honduras(UNICAH)
+                        dispuesta a trabajar en cualquier área que me coloquen, tengo la habilidad de adaptarme a
+                        cualquier lugar o equipo de trabajo, toda mi vida estuve en equipos diferente lo cual me dio la
+                        habilidad de poder actuar de manera diferente en diferentes grupos, soy responsables, amable y
+                        si no se algo me propongo a aprenderlo para no ser una carga para los demás.
                     </p>
                 </div>
                 <div Class="Skills">
                     <div Class="Right-Content">
                         <div>
-                            <H1 Class="Skills-Heading">My Skills</H1>
+                            <h1 Class="Skills-Heading">Mis habilidades</h1>
                         </div>
                         <div Class="Skills-Bar">
                             <!-- HTML -->
@@ -100,6 +107,14 @@
                                                 </div>
                                                 <div Class="Progress-Line"><Span Class="C"></Span></div>
                                             </div>
+
+                                            <!-- PYTHON -->
+                                            <div Class="Bar">
+                                                <div Class="Info">
+                                                    <Span>Python</Span>
+                                                </div>
+                                                <div Class="Progress-Line"><Span Class="Python"></Span></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -109,7 +124,7 @@
                 </div>
             </div>
             <div class="ButtonLinkDown2">
-                <a href="#Proyectos"><img id="button2" src="scroll-down.png" alt="ScrollDown"></a>
+                <a href="#Proyectos"><img id="button2" src="document/scroll-down.png" alt="ScrollDown"></a>
             </div>
         </div>
     </Section>
@@ -120,17 +135,14 @@
             <div Class="Proj-Heading">
                 <h1>Portfolio</h1>
             </div>
-
             <!-- <div Class="Portfolio-Content Container"> -->
             <div Class="Proj-1">
-                <img src="AppCamo.png" alt="AppCamo">
+                <img src="document/AppCamo.png" alt="AppCamo">
             </div><br>
-            <!-- </div><br> -->
 
             <div Class="Proj-1">
-                <img src="AppCamo.png" alt="AppCamo">
-            </div>
-        </div>
+                <img src="document/AppCamo.png" alt="AppCamo">
+            </div><br>
         </div>
     </Section>
 
@@ -140,7 +152,8 @@
             <div Class="Contact-Content">
                 <h2>Contact Me</h2>
                 <p Class="Mail">
-                    Puedes contactarte conmigo en el correo<a class="MailBox" href="mailto:wfem12@hotmail.com">wfem12@hotmail.com</a>
+                    Puedes contactarte conmigo en el correo<a class="MailBox"
+                        href="mailto:wfem12@hotmail.com">wfem12@hotmail.com</a>
                 </p>
                 <p Class="Links">Or Find Me On:</p>
 
@@ -150,10 +163,22 @@
                 <a href="#">Social</a>
                 <a href="#">Social</a>
                 <a href="#">Social</a><br><br>
-                <a href="Fernando Esquivel CV.pdf" download="Fernando Esquivel CV"><button>Descargar</button></a>
+                <a href="document/Fernando Esquivel CV.pdf" download="Fernando Esquivel CV"><button onclick="Myfunction()"
+                        id="idDownload" class="ButtonDowmload">Descargar</button></a>
             </div>
         </div>
     </div>
 </body>
+
+<script>
+
+    function Myfunction(params) {
+        buttonDowmload = document.getElementById("idDownload").innerHTML = "Esperando Descarga";
+        setTimeout(function () {
+            buttonDowmload = document.getElementById("idDownload").innerHTML = "Descargar";
+        }, 3000);
+    }
+
+</script>
 
 </html>
