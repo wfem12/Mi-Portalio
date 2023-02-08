@@ -460,7 +460,8 @@ Header {
     }
 
     .Menu-Items {
-        /* width: 100%; */
+        width: 100%;
+        justify-content: center;
     }
 
     .About-Content .Left-Content {
@@ -528,6 +529,11 @@ Header {
 @Media (Min-Width: 501px) And (Max-Width: 768px) {
     Html {
         Font-Size: 65%;
+    }
+
+    .Menu-Items {
+        width: 100%;
+        justify-content: center;
     }
 
     .About-Content .Left-Content {
