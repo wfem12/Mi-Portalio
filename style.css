@@ -451,3 +451,198 @@ Header {
 .Contact-Content .MailBox:hover {
     color: #808080;
 }
+
+/* ---------------------------------------------------- MEDIA QUERY ---------------------------------------------------- */
+
+@Media (Max-Width: 500px) {
+    Html {
+        Font-Size: 60%;
+    }
+
+    .Menu-Items {
+        /* width: 100%; */
+    }
+
+    .About-Content .Left-Content {
+        Flex-Basis: 100%;
+        Text-Align: Center;
+    }
+
+    .About-Content .Right-Content {
+        Flex-Basis: 100%;
+    }
+
+    .Skills {
+        Width: 100%;
+    }
+
+    .Skills-Bar .Bar .Progress-Line {
+        Width: 100%;
+    }
+
+    .Work-Arrow {
+        Display: None;
+    }
+
+    .Right-Content H1 {
+        Margin-Top: 3.2rem;
+    }
+
+    .Proj-1 {
+        Display: Flex;
+        Justify-Content: Center;
+        Flex-Direction: Column;
+    }
+
+    .Proj-1 Img {
+        Height: 230px;
+        Width: 290px;
+        Margin-Bottom: 0.5rem;
+    }
+
+    .Proj-2 {
+        Display: Flex;
+        Justify-Content: Center;
+        Flex-Direction: Column;
+    }
+
+    .Proj-2 Img {
+        Height: 250px;
+        Width: 290px;
+        Margin-Bottom: 0.5rem;
+    }
+
+    .Work-Arrow-2 A {
+        Font-Size: 1.3rem;
+        Text-Decoration: None;
+        Color: #25b79f;
+        Display: Block;
+        Text-Align: Center;
+    }
+
+    .Contact-Content {
+        Width: 100%;
+    }
+}
+
+@Media (Min-Width: 501px) And (Max-Width: 768px) {
+    Html {
+        Font-Size: 65%;
+    }
+
+    .About-Content .Left-Content {
+        Flex-Basis: 100%;
+        Text-Align: Center;
+    }
+
+    .About-Content .Right-Content {
+        Flex-Basis: 100%;
+    }
+
+    .Skills {
+        Width: 100%;
+    }
+
+    .Skills-Bar .Bar .Progress-Line {
+        Width: 100%;
+    }
+
+    .Work-Arrow {
+        Display: None;
+    }
+
+    .Right-Content H1 {
+        Margin-Top: 3.2rem;
+    }
+
+    .Proj-1 {
+        Display: Flex;
+        Justify-Content: Center;
+        Flex-Direction: Column;
+    }
+
+    .Proj-1 Img {
+        Height: 240px;
+        Width: 290px;
+        Margin-Bottom: 0.5rem;
+    }
+
+    .Proj-2 {
+        Display: Flex;
+        Justify-Content: Center;
+        Flex-Direction: Column;
+    }
+
+    .Proj-2 Img {
+        Height: 240px;
+        Width: 290px;
+        Margin-Bottom: 0.5rem;
+    }
+
+    .Work-Arrow-2 A {
+        Font-Size: 1.3rem;
+        Text-Decoration: None;
+        Color: #25b79f;
+        Display: Block;
+        Text-Align: Center;
+    }
+
+    .Contact-Content {
+        Width: 100%;
+    }
+}
+
+@Media (Min-Width: 769px) And (Max-Width: 1200px) {
+    Html {
+        Font-Size: 70%;
+    }
+
+    .About-Content .Left-Content {
+        Flex-Basis: 100%;
+        Text-Align: Center;
+    }
+
+    .About-Content .Right-Content {
+        Flex-Basis: 100%;
+    }
+
+    .Skills {
+        Width: 100%;
+        Display: Flex;
+        Flex-Direction: Column;
+        Justify-Content: Center;
+        Align-Items: Center;
+    }
+
+    .Work-Arrow {
+        Display: None;
+    }
+
+    .Left-Content H1 {
+        Margin-Top: 3.2rem;
+        Text-Align: Center;
+    }
+
+    .Right-Content H1 {
+        Margin-Top: 3.2rem;
+        Text-Align: Center;
+    }
+
+    .Work-Arrow-2 A {
+        Font-Size: 1.3rem;
+        Text-Decoration: None;
+        Color: #25b79f;
+        Display: Block;
+        Text-Align: Center;
+    }
+
+    .Contact-Content {
+        Width: 100%;
+    }
+}
+
+@Media (Orientation: Landscape) And (Max-Height: 500px) {
+    .Header {
+        Height: 90vmax;
+    }
+}
