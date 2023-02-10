@@ -68,7 +68,11 @@ Header {
 }
 
 /* POSICIONANDO EL CONTENIDO EN MEDIO */
-.Home-Content .Name {
+
+.Image {
+    position: relative;
+}
+.Home-Content .Name{
     Position: Absolute;
     Top: 47%;
     Left: 50%;
@@ -496,6 +500,17 @@ Header {
 }
 
 /* ---------------------------------------------------- MEDIA QUERY ---------------------------------------------------- */
+/* RESPONSIVE DE LA ALTURA */
+@media screen and (max-height: 500px) {
+    .Image {
+        margin-top: 100px;
+    }
+
+    .ButtonLinkDown {
+        position: absolute;
+        top: 110%;
+    }
+}
 
 @Media (Max-Width: 500px) {
     Html {
@@ -518,7 +533,9 @@ Header {
 
     .Skills {
         Width: 100%;
+        margin: 20px;
     }
+
 
     .Skills-Bar .Bar .Progress-Line {
         Width: 100%;
