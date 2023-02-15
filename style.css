@@ -45,8 +45,9 @@ Header {
     display: flex;
     position: absolute;
     left: 50%;
+    top: 0;
     transform: translate(-50%);
-
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* SEPARACION DE LAS LISTA DEL MENU */
@@ -75,7 +76,7 @@ Header {
 
 .Home-Content .Name {
     Position: Absolute;
-    Top: 47%;
+    Top: 50%;
     Left: 50%;
     Transform: Translate(-50%, -50%);
     Color: #07374a;
@@ -216,7 +217,7 @@ Header {
 }
 
 /* CREA UNA ANIMACION QUE MUESTRA CON UN COLOR SOLIDO EL % DEL RANGO */
-@Keyframes Animate {
+/* @Keyframes Animate {
     100% {
         Transform: ScaleX(1);
     }
@@ -244,10 +245,10 @@ Header {
 
 .Progress-Line .Python {
     Width: 40%;
-}
+} */
 
 /* CONTENIDO */
-.Progress-Line .Html::After {
+/* .Progress-Line .Html::After {
     Content: "90%";
 }
 
@@ -269,10 +270,10 @@ Header {
 
 .Progress-Line .Python::after {
     content: "40%";
-}
+} */
 
 /* LINEA QUE DESCRIBE EL FINAL DEL COLOR */
-.Bar .Progress-Line span::Before {
+/* .Bar .Progress-Line span::Before {
     Position: Absolute;
     Content: "";
     Height: 0;
@@ -284,10 +285,10 @@ Header {
     Border-Right-Width: 0px;
     Border-Top-Style: #F0f0f0;
     Border-Top-Color: #F0f0f0;
-}
+} */
 
 /* MUESTRA EL NUMERO DE PORCENTAJE DESPUES DE COLOCARLE EL CONTENIDO */
-.Bar .Progress-Line Span::After {
+/* .Bar .Progress-Line Span::After {
     Position: Absolute;
     Right: 0;
     Top: -28px;
@@ -297,7 +298,7 @@ Header {
     Background: #F0f0f0;
     Padding: 1px 8px;
     Border-Radius: 10px;
-}
+} */
 
 .Navbar.Solid {
     Background-Color: #07374a;
@@ -497,7 +498,7 @@ Header {
 /* RESPONSIVE DE LA ALTURA */
 @media screen and (max-height: 1000px) {
     .Image {
-        margin-top: 400px;
+        margin-top: 130px;
     }
 
     .Contact {
