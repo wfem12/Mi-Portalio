@@ -495,7 +495,7 @@ Header {
 
 /* ---------------------------------------------------- MEDIA QUERY ---------------------------------------------------- */
 /* RESPONSIVE DE LA ALTURA */
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 1000px) {
     .Image {
         margin-top: 400px;
     }
