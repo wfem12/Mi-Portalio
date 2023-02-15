@@ -497,12 +497,11 @@ Header {
 /* RESPONSIVE DE LA ALTURA */
 @media screen and (max-height: 500px) {
     .Image {
-        margin-top: 100px;
+        margin-top: 400px;
     }
 
-    .ButtonLinkDown {
-        position: absolute;
-        top: 110%;
+    .Contact {
+        height: 90vh;
     }
 }
 
