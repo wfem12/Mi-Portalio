@@ -26,19 +26,19 @@ Header {
 /* -----------------NAVBAR----------------- */
 
 /* CREAR LA POSICION DE LA NAVEGACION AL UTILIZAR EL SCROLL */
-/* .Navbar {
+.Navbar {
     position: fixed;
     width: 100%;
     z-index: 500;
-} */
+}
 
 /* COLOCACION HORIZONTAL DE LA NAVEGACION EN POSICION FIXED */
-/* .Navbar-Container {
+.Navbar-Container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 64px;
-} */
+}
 
 /* COLOCAR LOS MENUS EN POSICION HORIZONTAL */
 .Menu-Items {
@@ -92,24 +92,6 @@ Header {
 .Home-Content .Name p {
     Color: #F0f0e6;
     Font-Size: 1.5rem;
-}
-
-/* BOTON PARA DIRIGIR A ACERCA DE */
-.ButtonLinkDown {
-    Position: Absolute;
-    Bottom: 10%;
-    Left: 50%;
-    Transform: Translate(-50%, -50%);
-    Font-Size: 2rem;
-}
-
-/* BOTON PARA DIRIGIR A MIS PROYECTOS */
-.ButtonLinkDown2 {
-    Position: Absolute;
-    /* margin-top: 40px; */
-    Left: 50%;
-    Transform: Translate(-50%, -50%);
-    Font-Size: 2rem;
 }
 
 
