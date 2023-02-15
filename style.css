@@ -530,6 +530,11 @@ Header {
         margin: 20px;
     }
 
+    .Skills .Skills-Bar {
+        display: grid;
+        place-content: center;
+    }
+
 
     .About-Me .About-Content {
         Display: Flex;
@@ -561,26 +566,6 @@ Header {
         Margin-Bottom: 0.5rem;
     }
 
-    .Proj-2 {
-        Display: Flex;
-        Justify-Content: Center;
-        Flex-Direction: Column;
-    }
-
-    .Proj-2 Img {
-        Height: 250px;
-        Width: 290px;
-        Margin-Bottom: 0.5rem;
-    }
-
-    .Work-Arrow-2 A {
-        Font-Size: 1.3rem;
-        Text-Decoration: None;
-        Color: #25b79f;
-        Display: Block;
-        Text-Align: Center;
-    }
-
     .Contact-Content {
         Width: 100%;
     }
@@ -607,6 +592,11 @@ Header {
 
     .Skills {
         Width: 100%;
+    }
+
+    .Skills .Skills-Bar {
+        display: grid;
+        place-content: center;
     }
 
     .About-Me .About-Content {
@@ -639,26 +629,6 @@ Header {
         Margin-Bottom: 0.5rem;
     }
 
-    .Proj-2 {
-        Display: Flex;
-        Justify-Content: Center;
-        Flex-Direction: Column;
-    }
-
-    .Proj-2 Img {
-        Height: 240px;
-        Width: 290px;
-        Margin-Bottom: 0.5rem;
-    }
-
-    .Work-Arrow-2 A {
-        Font-Size: 1.3rem;
-        Text-Decoration: None;
-        Color: #25b79f;
-        Display: Block;
-        Text-Align: Center;
-    }
-
     .Contact-Content {
         Width: 100%;
     }
@@ -684,6 +654,11 @@ Header {
         Flex-Direction: Column;
         Justify-Content: Center;
         Align-Items: Center;
+    }
+
+    .Skills .Skills-Bar {
+        display: grid;
+        place-content: center;
     }
 
     .About-Me .About-Content {
