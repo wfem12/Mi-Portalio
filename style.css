@@ -72,7 +72,8 @@ Header {
 .Image {
     position: relative;
 }
-.Home-Content .Name{
+
+.Home-Content .Name {
     Position: Absolute;
     Top: 47%;
     Left: 50%;
@@ -116,10 +117,8 @@ Header {
 
 /* CAMBIARLE EL TAMAÑO A LA IMAGEN Y OPTIMIZARLA */
 .About-Content img {
-    Height: 200px;
-    Width: 150px;
-    Object-Fit: Cover;
-    Border-Radius: 50%;
+    /* width: 50%; */
+    /* Object-Fit: Cover; */
 }
 
 /* DECORAR EL TEXTO DEL PARRAFO Y CAMBIARLE EL TAMAÑO */
@@ -132,6 +131,7 @@ Header {
     top: 15%;
 }
 
+
 /* ALINEAR EL TEXTO AL CENTRO Y CAMBIARLE EL TAMAÑO */
 .Skills .Skills-Heading {
     Font-Size: 2rem;
@@ -140,21 +140,33 @@ Header {
     Text-Align: Center;
 }
 
+.Skills .Skills-Bar {
+    display: grid;
+    place-content: center;
+}
+
 /* PASAR EL CONTENIDO DE LAS HABILIDADES A LA IZQUIERDA */
+
 .About-Me .About-Content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* .About-Me .About-Content {
     Display: Flex;
     Flex-Wrap: Wrap;
-}
+} */
 
 /* ALINEAR TODO EN MEDIO Y EN SU POSICION TANTO DERECHA COMO IZQUIERDA */
-.About-Content .Left-Content {
+/* .About-Content .Left-Content {
     Flex-Basis: 45%;
     Text-Align: Center;
-}
+} */
 
-.About-Content .Right-Content {
+/* .About-Content .Right-Content {
     Flex-Basis: 45%;
-}
+    justify-content: end;
+} */
 
 
 /* ///.....Skill Bar....../// */
@@ -519,8 +531,9 @@ Header {
     }
 
 
-    .Skills-Bar .Bar .Progress-Line {
-        Width: 100%;
+    .About-Me .About-Content {
+        Display: Flex;
+        Flex-Wrap: Wrap;
     }
 
     .Work-Arrow {
@@ -596,8 +609,9 @@ Header {
         Width: 100%;
     }
 
-    .Skills-Bar .Bar .Progress-Line {
-        Width: 100%;
+    .About-Me .About-Content {
+        Display: Flex;
+        Flex-Wrap: Wrap;
     }
 
     .Work-Arrow {
@@ -672,6 +686,11 @@ Header {
         Align-Items: Center;
     }
 
+    .About-Me .About-Content {
+        Display: Flex;
+        Flex-Wrap: Wrap;
+    }
+
     .Work-Arrow {
         Display: None;
     }
@@ -686,14 +705,6 @@ Header {
         Text-Align: Center;
     }
 
-    .Work-Arrow-2 A {
-        Font-Size: 1.3rem;
-        Text-Decoration: None;
-        Color: #25b79f;
-        Display: Block;
-        Text-Align: Center;
-    }
-
     .Contact-Content {
         Width: 100%;
     }
@@ -701,6 +712,6 @@ Header {
 
 @Media (Orientation: Landscape) And (Max-Height: 500px) {
     .Header {
-        Height: 90vmax;
+        Height: 100vmax;
     }
 }
