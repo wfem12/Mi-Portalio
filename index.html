@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="card.css">
     <title>Portafolio</title>
 </head>
 
@@ -35,7 +37,7 @@
                 <div class="Name">
                     <div class="Image">
                         <div Class="Proj-1" style="width: 100%; height: 100%;">
-                            <img height="20%" src="document/Yo.jpeg" alt="AppCamo">
+                            <img height="20%" src="document/img/Yo.jpeg" alt="AppCamo">
                         </div><br>
                     </div>
                     <h1>Mucho gusto, me llamo Wilmer Fernando Esquivel</h1>
@@ -71,7 +73,7 @@
                             <h1 Class="Skills-Heading">Mis habilidades</h1>
                         </div>
                         <div Class="Skills-Bar">
-                            <img src="document/Skill.png" alt="Skill">
+                            <img src="document/img/Skill.png" alt="Skill">
                         </div>
                     </div>
                 </div>
@@ -82,43 +84,79 @@
     <!-- ---------------------------------------------------- MIS PROYECTOS ---------------------------------------------------- -->
     <Section Id="Proyectos">
         <div Class="Portfolio">
+
             <div Class="Proj-Heading">
-                <h1>Portfolio</h1>
+                <h1>Mis Proyectos</h1>
             </div>
 
-            <div class="portafolio-grid">
-                <div Class="Proj-1">
-                    <img src="document/AppCamo.png" alt="AppCamo">
-                </div>
+            <div class="portafolio__grid">
+                <!-- PROJECT#1 -->
+                <section>
+                    <div class="container__card">
+                        <div class="card__main">
+                            <!-- FIRST FACE -->
+                            <div class="card">
+                                <div class="card__front"
+                                    style="background-image: url(document/img/project/AppCamo.png);">
+                                    <div class="background"></div>
+                                    <div class="body__card_front">
+                                        <h1 class="card_front__title">Aplicación Web de fundación Camo Honduras</h1>
+                                    </div>
+                                </div>
 
-                <div Class="Proj-1">
-                    <img src="document/AppCamo.png" alt="AppCamo">
-                </div>
+                                <!-- SECOND FACE -->
+                                <div class="card__back">
+                                    <div class="body__card_back">
+                                        <h1 class="card_back__title">Aplicación Web de fundación Camo Honduras</h1>
+                                        <p>
+                                            Esta Aplicación web se creó con el proposito de ayudar a la empresa a tener todo
+                                            el control de sus pacientes e usuarios, donde se encargará de tener todos sus
+                                            datos de manera ordenada y segura. Poder analizar sus datos para resolver
+                                            problema y ayudar a los pacientes necesitados con donaciones dependiendo el estudio
+                                            socioeconómico de la misma.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                <div Class="Proj-1">
-                    <img src="document/AppCamo.png" alt="AppCamo">
-                </div>
+                <!-- PROJECT#2 -->
+                <section>
+                    <div class="container__card">
+                        <div class="card__main">
+                            <!-- FIRST FACE -->
+                            <div class="card">
+                                <div class="card__front"
+                                    style="background-image: url(document/img/project/AppCamo.png);">
+                                    <div class="background"></div>
+                                    <div class="body__card_front">
+                                        <h1 class="card_front__title">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Hic, omnis.</h1>
+                                    </div>
+                                </div>
 
-                <div Class="Proj-1">
-                    <img src="document/AppCamo.png" alt="AppCamo">
-                </div>
+                                <!-- SECOND FACE -->
+                                <div class="card__back">
+                                    <div class="body__card_back">
+                                        <h1 class="card_back__title">Project</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ab quas
+                                            recusandae
+                                            voluptatum aliquid tempore animi corporis voluptas. Tempore neque iure
+                                            necessitatibus
+                                            voluptas nesciunt animi dolores incidunt delectus sapiente illum.</p>
+                                        <input class="card_back__button" type="button" value="Leer Más">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </Section>
-    <!-- <Section Id="Proyectos">
-        <div Class="Portfolio">
-            <div Class="Proj-Heading">
-                <h1>Portfolio</h1>
-            </div>
-            <div Class="Proj-1">
-                <img src="document/AppCamo.png" alt="AppCamo">
-            </div><br>
 
-            <div Class="Proj-1">
-                <img src="document/AppCamo.png" alt="AppCamo">
-            </div><br>
-        </div>
-    </Section> -->
 
     <!-- CONTACTO -->
     <div Class="Contact" Id="Contacto">
@@ -130,12 +168,10 @@
                         href="mailto:wfem12@hotmail.com">wfem12@hotmail.com</a><br><br>
                 </p>
                 <p Class="Links">Tambien puedes contactarme en lo siguiente:</p>
-                <a href="#">Social</a>
-                <a href="#">Social</a>
-                <a href="#">Social</a>
-                <a href="#">Social</a>
-                <a href="#">Social</a>
-                <a href="#">Social</a><br><br>
+                <a href="#"><img src="document/img/facebook.png" alt="fb"></a>
+                <a href="#"><img src="document/img/instagram.png" alt="ig"></a>
+                <a href="#"><img src="document/img/github.png" alt="gh"></a>
+                <a href="#"><img src="document/img/Linkedin.png" alt="ln"></a><br><br>
 
                 <p Class="Links">Descarga aqui mi CV <br>
                     <a href="document/Fernando Esquivel CV.pdf" download="Fernando Esquivel CV"><button

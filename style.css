@@ -96,6 +96,33 @@ Header {
     Font-Size: 1.5rem;
 }
 
+/* PICTURE CIRCLE */
+/* Centra el Objeto */
+.Proj-1 {
+    Display: Flex;
+    Justify-Content: Center;
+    Align-Items: Center;
+    /* QUIRAR SI SE ARRUINA */
+    margin-top: 10px;
+}
+
+/* Diseño Circular y tamaño */
+.Proj-1 img {
+    Height: 330px;
+    Width: 380px;
+    Object-Fit: Cover;
+    Border-Radius: 50%;
+    border: 2px solid #000;
+    Box-Shadow: 0 20px 10px -10px Rgb(37 41 52 / 31%);
+    Margin-Right: 1.7rem;
+}
+
+.Portfolio-Content-image {
+    /* position: relative; */
+    /* right: 0%; */
+    /* transform: translate(-185%); */
+}
+
 
 /* ----------------------------------------------------ACERCA DE MI---------------------------------------------------- */
 
@@ -318,7 +345,7 @@ Header {
 /* MIS TRABAJOS */
 
 /* QUIRTARLO SI SE ARRUINA ALGO */
-.portafolio-grid {
+.portafolio__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -345,88 +372,6 @@ Header {
     Font-Weight: 700;
     Margin: 3rem 0;
 }
-
-/* Centra el Objeto */
-.Proj-1 {
-    Display: Flex;
-    Justify-Content: Center;
-    Align-Items: Center;
-    /* QUIRAR SI SE ARRUINA */
-    margin-top: 10px;
-}
-
-/* Diseño Circular y tamaño */
-.Proj-1 img {
-    Height: 330px;
-    Width: 380px;
-    Object-Fit: Cover;
-    Border-Radius: 50%;
-    border: 2px solid #000;
-    Box-Shadow: 0 20px 10px -10px Rgb(37 41 52 / 31%);
-    Margin-Right: 1.7rem;
-    /* content: ""; */
-}
-
-.Portfolio-Content-image {
-    /* position: relative; */
-    /* right: 0%; */
-    /* transform: translate(-185%); */
-}
-
-/* .Proj-1 .Proj1-Details {
-    Width: 32rem;
-}
-
-.Proj-1 .Proj1-Details i {
-    Font-Size: 1.5rem;
-    Color: #07374a;
-}
-
-.Proj-1 .Proj1-Details h2 {
-    Font-Size: 2rem;
-    Color: #07374a;
-}
-
-.Proj-1 .Proj1-Details p {
-    Font-Size: 1.3rem;
-    Color: #07374a;
-    Font-Weight: 600;
-} */
-
-/* Diseño de los botones */
-.Proj-1 .Proj1-Details Button {
-    Background: #F0f0e6;
-    Padding: 0.5rem;
-    Margin-Top: 0.5rem;
-    Width: 150px;
-    Border: None;
-    Border-Bottom: 2px Solid #07374a;
-}
-
-.Proj-1 .Proj1-Details Button a {
-    Text-Decoration: None;
-    Color: #07374a;
-    Font-Size: 1.1rem;
-    Transition: 0.2s Ease-In-Out;
-    Text-Align: Center;
-    Transition: 0.3s Ease-In-Out;
-}
-
-/* .Proj-1 .Proj1-Details Button .Fas {
-    Font-Size: 0.7rem;
-    Padding: 0.3rem;
-    Transition: 0.2s Ease-In-Out;
-} */
-
-.Proj-1 .Proj1-Details Button:hover {
-    Background: #07374a;
-}
-
-.Proj-1 .Proj1-Details Button:hover a,
-.Proj-1 .Proj1-Details Button:hover .Fas {
-    Color: #fff;
-}
-
 /* ---------------------------------------------------- CONTACTOS ---------------------------------------------------- */
 
 .MailBox {
@@ -556,7 +501,7 @@ Header {
     }
 
     /* GRID */
-    .portafolio-grid {
+    .portafolio__grid {
         display: block;
     }
 
@@ -619,7 +564,7 @@ Header {
     }
 
     /* GRID */
-    .portafolio-grid {
+    .portafolio__grid {
         display: block;
     }
 
